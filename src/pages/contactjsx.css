@@ -16,10 +16,8 @@
     margin-top: -53%;
     margin-right: -7rem;
     position: absolute;
-    /* Set position absolute */
     z-index: 1;
     top: 80%;
-    /* Position at the top */
     right: -10%;
 }
 
