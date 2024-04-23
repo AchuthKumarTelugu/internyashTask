@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import './order.css'
 import { useLocation } from 'react-router-dom'
 let breakfastMixesData = [
@@ -661,7 +661,6 @@ let breakfastMixesData = [
       }
   }
 ]
-// let breakfastTabs=["Mix Powders","Cook Powders","Chutney","Sambhar"]
 let biryaniData = [
   {
       "sno": 29,
@@ -881,54 +880,81 @@ let biryaniData = [
       }
   }
 ]
-// let biryaniTabs=["Non-Veg Biryani Masala's","Veg Biryani Malsa's"]
 let teaConcentrationsData = [
 ]
 let totalData=[...breakfastMixesData,...biryaniData,...teaConcentrationsData]
 function OrderPage() {
   const sno=Number(localStorage.getItem("productId"))
   const category=(localStorage.getItem("category"))
+  const [formdata, setFormdata] = useState({
+    name:"",email:""
+  });
+  const handleChange= (e) => {
+    const {name,value}=e.currentTarget
+    setFormdata(prevData=>({...prevData, [name]: value}))
+  }
+  
   console.log(totalData)
   let selectedData;
   totalData.map((item,index)=>{
-    // console.log(item.sno,typeof item.sno,r(sno),typeof (sno),item.sno===(sno))
     if(item.sno==sno) {
-      // console.log("item matched",item.sno,typeof item.sno,(sno),typeof (sno),item.sno===(sno))
-      // console.log("item matched",item)
       selectedData=item;
     }
   })
   const data=totalData.find(item=> item.sno===(sno) && item.category==category )
   console.log(data)
   useEffect(()=>{
-    // console.log("sno",sno,typeof sno,"category",category,typeof category)
     console.log("selectedData",selectedData)
   },[])
+
+  const handleSubmit =(e) => {
+    e.preventDefault();//prevent loading
+    if(formdata.name.length > 0 && formdata.email.length > 0 ) {
+    console.log("entered handleSubmit")
+    alert("Ordered Successfully!!!")
+    const ownerPhoneNumber = '7036987151'; // owner's actual phone number(change value if needed)
+    //  WhatsApp message
+    const message = `Order Details:\nProduct Name: ${selectedData.productName}\nName: ${formdata.name}\nEmail: ${formdata.email}`;
+     console.log("message",message)
+    // WhatsApp link with the owner's phone number and message
+    const whatsappLink = `https://wa.me/${ownerPhoneNumber}?text=${encodeURIComponent(message)}`;
+    // Opening WhatsApp
+    window.open(whatsappLink, '_blank');
+    console.log('Form submitted:', formdata);
+    setFormdata({
+      name:"",email:""
+    })
+  }else{
+    alert("enter form data before submitting")
+  }
+  }
   
   return (
     <div>
   <div className='order'>
-    <div className='order-image'>
+    <div className='order-image' onSubmit={handleSubmit}>
       <img src={selectedData && selectedData.image}></img>
       <div className='order-name'>
       {selectedData && selectedData.productName}
       </div>
     </div>
     <div className='order-form'>
-      <form className='form-order'>
-        <input className='order-input'type='text' name='name' placeholder='Enter name'></input>
-        <input className='order-input'type='email' name='email' placeholder='Enter email'></input>
-      </form>
-      <div className='whatsapp-order-button'>
-        <button className='order-btn'>
+      <form className='form-order' onSubmit={handleSubmit}>
+        <div className='form-input'>
+        <input value={formdata.name} onChange={(e)=>handleChange(e)} className='order-input'type='text' name='name' placeholder='Enter name'></input>
+        <input value={formdata.email} onChange={(e)=>handleChange(e)} className='order-input'type='email' name='email' placeholder='Enter email'></input>
+        </div>
+      {/* <div className='whatsapp-order-button'> */}
+        <button className='order-btn' type="submit">
           <div className='order-btn-des'>
              <div className='whatsapp-img'>
               <img src='./whatsapp-img.png'></img>
              </div>
-             <div className='btn-text'>Order Now</div>
+             <div className='btn-text' >Order Now!</div>
           </div>
         </button>
-      </div>
+      {/* </div> */}
+      </form>
     </div>
   </div>
         </div>
