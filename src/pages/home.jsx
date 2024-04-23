@@ -4,7 +4,7 @@ import Footer from './Footer';
 import Headder from "./Navbar";
 import Carousel from "./carousol";
 
-function Home() {
+function Home() { 
   return ( 
       <>
       <
@@ -68,7 +68,7 @@ function Home() {
         </div>
       </div> */}
 
-<div class="container">
+<div class="container container-1">
         <h1>Who We Are</h1>
         <div class="content">
             <img src="/frame-273@2x.png" alt="Company Photo" class="photo"></img>
@@ -84,7 +84,7 @@ function Home() {
       <div class="best-seller">
         Best Seller
       </div>
-      <div className="container">
+      <div className="container container-2">
         <
         div className="stand-up-pouch-bag-mockup-2-parent" >
           <

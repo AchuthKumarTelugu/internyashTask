@@ -42,3 +42,6 @@ body {
   --br-xl: 20px;
   --br-mini: 15px;
 }
+body{
+  overflow-x:hidden;
+}

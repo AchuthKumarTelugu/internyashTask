@@ -18,11 +18,46 @@
 
 .carousel-text {
     position: absolute;
-    top: 12x0%;
+    top: 12%;
     color: white;
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 80px;
     /* Semi-transparent background */
     padding: 10px;
+}
+@media screen and (max-width:770px) {
+    .carousel-container{
+        position:relative;
+    }
+    .carousel-text{
+        top:50%;
+    }
+    .carousel-text p{
+        font-size:2rem;
+        /* color:black; */
+    }
+   
+    
+}
+@media screen and (min-width:771px) and (max-width:1120px) {
+    .carousel-container{
+        position:relative;
+    }
+    .carousel-text{
+        top:50%;
+    }
+    .carousel-text p{
+        font-size:3rem;
+         /* color:black; */
+    }
+} 
+@media screen and (min-width:1121px) {
+    .carousel-container{
+        position:relative;
+    }
+    .carousel-text{
+        top:50%;
+    }
+    
 }
