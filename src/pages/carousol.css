@@ -1,0 +1,28 @@
+.carousel-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    /* Adjust the height as needed */
+}
+
+.carousel-image {
+    width: 30%;
+    height: 20%;
+    object-fit: cover;
+}
+
+.contact-page {
+    margin-top: -90%;
+}
+
+.carousel-text {
+    position: absolute;
+    top: 12x0%;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 80px;
+    /* Semi-transparent background */
+    padding: 10px;
+}
