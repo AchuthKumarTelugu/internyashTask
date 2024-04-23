@@ -86,6 +86,7 @@ main {
     left: 0;
     background-color: var(--color-royalblue-100);
     width: 100%;
+    width:100vw;
     height: 3.75rem;
     overflow: hidden;
     color: var(--color-white);

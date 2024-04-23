@@ -787,3 +787,23 @@
     color: rgba(0, 0, 0, 0.8);
     font-family: var(--font-montserrat);
 }
+@media screen and (max-width: 600px) {
+    .searchbar {
+        width: 14rem;
+        left: 34rem;
+    }
+    .access-context-manager-svgrepo-parent {
+       
+        width: 84.86%;
+    }
+}
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+    .searchbar {
+        width: 16rem;
+        left: 36rem;
+    }
+    .access-context-manager-svgrepo-parent {
+       
+        width: 84.86%;
+    }
+}

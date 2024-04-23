@@ -385,7 +385,7 @@ function Products() {
        <Headder/>
        {/* <p style={{ fontWeight: 'bold', display: 'inline-block', textAlign: 'center', width: '100%' }}>products page</p> */}
 
-       <div>
+       <div className='product-box'>
 
   <div className='product-filter'>
   <button className={`product-button-1 ${activeTab === 'breakfast' ? 'active' : ''}`} onClick={() => handleTabClick('breakfast')}>

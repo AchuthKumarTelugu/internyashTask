@@ -3,7 +3,7 @@ import './product_style1.css'
 
 function Spotlight() {
     return ( <
-        div >
+        div  >
         <
         div className = 'spotlight-header' >
         <
