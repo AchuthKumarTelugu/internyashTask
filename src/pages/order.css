@@ -85,3 +85,18 @@ font-style: normal;
 font-weight: 600;
 line-height: normal;
 }
+@media screen and (max-width:770px) {
+    .form-input{
+        display: flex;
+        flex-direction: column;
+    }
+    .order-input{
+        padding: 20px 57px 20px 16px;
+    }
+}
+@media screen and (min-width:771px) and (max-width:1120px) {
+    .form-input{
+        display: flex;
+        flex-direction: column;
+    }
+}

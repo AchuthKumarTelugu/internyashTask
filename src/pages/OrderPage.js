@@ -335,7 +335,7 @@ let teaConcentrationsData=[
 ]
 let totalData=[...breakfastMixesData,...biryaniData,...teaConcentrationsData]
 function OrderPage() {
-  const sno=Number(localStorage.getItem("productId"))
+  const sno=Number(localStorage.getItem("productId")) 
   const category=(localStorage.getItem("category"))
   const [formdata, setFormdata] = useState({
     name:"",email:""
