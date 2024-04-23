@@ -549,5 +549,17 @@ main {
    .core-2-a{
     padding:1rem 2rem;
    }
-
+   .founder-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .founder-1-des{
+    width: 71%;
+   }
+    .image-1-founder{
+        margin-top:4rem;
+        margin-bottom:4rem;
+    }
     }
