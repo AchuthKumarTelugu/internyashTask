@@ -128,7 +128,7 @@ let breakfastMixesData=[
       "category": "Sambhar"
     },
   ]
-  let BiryaniData=[
+  let biryaniData=[
     {
       "sno": "21",
       "productName": "Chicken Dum Biryani Masala",
@@ -222,7 +222,7 @@ let breakfastMixesData=[
       "category": "veg masala"
     },
   ]
-  let TeaConcentrationsData=[
+  let teaConcentrationsData=[
     {
       "sno": "36",
       "productName": "Ginger Flavored Tea Masala",
@@ -344,7 +344,7 @@ let data = {
     breakfastMixPowders: breakfastMixesData.filter((each) => each.category === "Mix Powders"),
     breakfastCookPowders: breakfastMixesData.filter((each) => each.category === "Cook Powders"),
     breakfastChutneys: breakfastMixesData.filter((each) => each.category === "Chutney"),
-    breakfastSambars: breakfastMixesData.filter((each) => each.category === "Sambar"),
+    breakfastSambars: breakfastMixesData.filter((each) => each.category === "Sambhar"),
     nonVegMasalas: biryaniData.filter((each) => each.category === "non-veg masala"),
     vegMasalasdata: biryaniData.filter((each) => each.category === "veg masala"),
     teadata: teaConcentrationsData.filter((each) => each.category === "Tea"),
@@ -440,7 +440,7 @@ function Products() {
                     </div>}
 
                     {activeTab === "tea" && <div className='filters-products'>
-                        <button className={`filters-btn ${activeFilter === 'Teaa' ? 'active' : ''}`} onClick={() => handleFilterClick('Tea')}>
+                        <button className={`filters-btn ${activeFilter === 'Tea' ? 'active' : ''}`} onClick={() => handleFilterClick('Tea')}>
                             Tea
                         </button>
                         <button className={`filters-btn ${activeFilter === 'beverages' ? 'active' : ''}`} onClick={() => handleFilterClick('beverages')}>
@@ -466,7 +466,7 @@ function Products() {
     </div>
     <div className="prod-display">
         {/* ------breakfast filtering---- */}
-    {activeTab === "breakfast" && activeFilter === "cook" && data.breakfast.map((product) => {
+    {activeTab === "breakfast" && activeFilter === "cook" && data.breakfastCookPowders.map((product) => {
                         const dataToSend = { id: product.sno }
                         return (
                             <div key={product.id} className='prod-display-1' style={{ position: 'relative' }}>
@@ -640,7 +640,7 @@ function Products() {
                             </div>
                         )
                     })}
-                    {teaConcentrationsData.length > 0 && activeTab === "tea" && activeFilter === "tea"&& data.teadata.map((product) => {
+                    {teaConcentrationsData.length > 0 && activeTab === "tea" && activeFilter === "Tea"&& data.teadata.map((product) => {
                         const dataToSend = { id: product.sno }
                         console.log(dataToSend, "datatpsend")
                         return (
