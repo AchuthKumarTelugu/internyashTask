@@ -1,101 +1,57 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import './Navbar.css';
-import { CiSearch } from "react-icons/ci";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+// import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { Link } from "react-router-dom";
+
 const Navbar = () => {
-    return ( <
-        >
-        <
-        div className = "home" >
-        <
-        div className = "macbook-air-7" >
-        <
-        div className = "searchbar" >
-        <
-        CiSearch style = {
-            { fontSize: '20px' }
-        }
-        /> <
-        input type = "search" / >
-        <
-        /div> <
-        div className = "access-context-manager-svgrepo-parent" >
-        <
-        img className = "access-context-manager-svgrepo-icon"
-        alt = ""
-        src = "/accesscontextmanager-svgrepocom.svg" /
-        >
-        <
-        img className = "vector-icon"
-        alt = ""
-        src = "/vector.svg" / >
-        <
-        div className = "nutryfood1" > NUTRYFOOD < /div> <
-        b className = "crowned-with-innovations2" > CROWNED WITH INNOVATIONS < /b> < /
-        div > <
-        div className = "component-58-parent" >
-        <
-        img className = "component-38-icon"
-        alt = ""
-        src = "/component-58.svg" / >
-        <
-        div className = "domestic-international" > { `Domestic & International Markets- Accessible worldwide and everywhere` } < /div> < /
-        div > <
-        /div> <
-        div className = "macbook-air-6" >
-        <
-        div className = "frame-parent1" >
-        <
-        div className = "home-group" >
-        <
-        div className = "best-sellers" > < Link to = "/" > Home < /Link></div > { /* <img className="frame-child3" alt="" src="/vector-18.svg" /> */ } <
-        /div> <
-        div className = "home-group" >
-        <
-        div className = "best-sellers" > < Link to = "/aboutus" > About Us < /Link></div >
-        <
-        img className = "frame-child4"
-        alt = ""
-        src = "/vector-19.svg" / >
-        <
-        /div> <
-        div className = "home-group" >
-        <
-        div className = "best-sellers" > < Link to = "/products" > Products < /Link></div >
-        <
-        img className = "frame-child4"
-        alt = ""
-        src = "/vector-20.svg" / >
-        <
-        /div> <
-        div className = "home-group" >
-        <
-        div className = "best-sellers" > < Link to = "/contactus" > Contact Us < /Link></div >
-        <
-        img className = "frame-child4"
-        alt = ""
-        src = "/vector-21.svg" / >
-        <
-        /div> < /
-        div > <
-        div className = "phone-2-1-parent" >
-
-        <
-        img className = "mdiwhatsapp-icon"
-        alt = ""
-        src = "/phone-2-1.svg" / > <
-        a href = "mailto:contact@Nutryfood.com" > <
-        img className = "mdiwhatsapp-icon"
-        alt = ""
-        src = "/mail-1-1.svg" / > < /a>  <
-        a href = "https://wa.me/93984 53144?text=Hello%20there!" > < img className = "mdiwhatsapp-icon"
-        alt = ""
-        src = "/mdiwhatsapp.svg" / > < /a>
-
-        <
-        /div> < /
-        div > <
-        /div> < / >
+    return(
+        <>
+        <div className="navbar">
+            <div className="row navbar-main-row">
+                <div className="col-12 navbar-col-1">
+                    <div className="row nav-row-1">
+                        <div className="col-md-4">
+                            <img className="logoimages" src="/nutriFoodLogo.png" alt="logo" />
+                        </div>
+                        <div className="col-md-4"></div>
+                        <div className="col-md-4 d-flex justify-content-end">
+                            <img className="logoimages" src="/navimage.png" />
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        <nav className="navbar navbar-expand-lg bg-primary">
+  <div className="container-fluid justify-content-end">
+    
+    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span className="navbar-toggler-icon"></span>
+    </button>
+    <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul className="navbar-nav me-2 mb-2 mb-lg-0">
+        <li className="nav-item">
+          <Link className="text-white nav-link" to="/">Home</Link>
+        </li>
+        <li className="nav-item">
+        <Link className="text-white nav-link" to="/aboutus">About Us</Link>
+        </li>
+        <li className="nav-item dropdown">
+        <a className="nav-link text-white" href="/products">Products</a>
+        </li>
+        <li className="nav-item">
+          {/* <a className="nav-link text-white">ContactUs</a> */}
+          <Link className="text-white nav-link" to="/contactus">Contact us</Link>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+        </>
     )
 }
+
 export default Navbar;
