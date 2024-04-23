@@ -1027,7 +1027,7 @@ function Products() {
                                     <Link to={{
                                         pathname: `/orderpage`,
                                         state: {
-                                            data: dataToSend
+                                            data:{productName:product.productName,image:product.image,sno:product.sno}
                                         }
                                     }}>
                                         <button className='btn-prod-card buynow-btn' onClick={() => handleBuyNowClick(product.sno, "Breakfast")}>
@@ -1051,7 +1051,7 @@ function Products() {
                                     <Link to={{
                                         pathname: `/orderpage`,
                                         state: {
-                                            data: dataToSend
+                                            data:{productName:product.productName,image:product.image,sno:product.sno}
                                         }
                                     }}>
                                         <button className='btn-prod-card buynow-btn' onClick={() => handleBuyNowClick(product.sno, "Breakfast")}>
@@ -1075,7 +1075,7 @@ function Products() {
                                     <Link to={{
                                         pathname: `/orderpage`,
                                         state: {
-                                            data: dataToSend
+                                            data:{productName:product.productName,image:product.image,sno:product.sno}
                                         }
                                     }}>
                                         <button className='btn-prod-card buynow-btn' onClick={() => handleBuyNowClick(product.sno, "Breakfast")}>
@@ -1099,7 +1099,7 @@ function Products() {
                                     <Link to={{
                                         pathname: `/orderpage`,
                                         state: {
-                                            data: dataToSend
+                                            data:{productName:product.productName,image:product.image,sno:product.sno}
                                         }
                                     }}>
                                         <button className='btn-prod-card buynow-btn' onClick={() => handleBuyNowClick(product.sno, "Breakfast")}>
@@ -1126,7 +1126,7 @@ function Products() {
                                     <Link to={{
                                         pathname: `/orderpage`,
                                         state: {
-                                            data: dataToSend
+                                            data:{productName:product.productName,image:product.image,sno:product.sno}
                                         }
                                     }}>
                                         <button className='btn-prod-card buynow-btn' onClick={() => handleBuyNowClick(product.sno, "Biryani")}>
@@ -1152,7 +1152,7 @@ function Products() {
                                     <Link to={{
                                         pathname: `/orderpage`,
                                         state: {
-                                            data: dataToSend
+                                            data:{productName:product.productName,image:product.image,sno:product.sno}
                                         }
                                     }}>
                                         <button className='btn-prod-card buynow-btn' onClick={() => handleBuyNowClick(product.sno, "Biryani")}>
@@ -1179,7 +1179,7 @@ function Products() {
                                     <Link to={{
                                         pathname: `/orderpage`,
                                         state: {
-                                            data: dataToSend
+                                            data:{productName:product.productName,image:product.image,sno:product.sno}
                                         }
                                     }}>
                                         <button className='btn-prod-card buynow-btn' onClick={() => handleBuyNowClick(product.sno, "Tea")}>
@@ -1204,7 +1204,7 @@ function Products() {
                                     <Link to={{
                                         pathname: `/orderpage`,
                                         state: {
-                                            data: dataToSend
+                                            data:{productName:product.productName,image:product.image,sno:product.sno}
                                         }
                                     }}>
                                         <button className='btn-prod-card buynow-btn' onClick={() => handleBuyNowClick(product.sno, "Tea")}>
@@ -1229,7 +1229,7 @@ function Products() {
                                     <Link to={{
                                         pathname: `/orderpage`,
                                         state: {
-                                            data: dataToSend
+                                            data:{productName:product.productName,image:product.image,sno:product.sno}
                                         }
                                     }}>
                                         <button className='btn-prod-card buynow-btn' onClick={() => handleBuyNowClick(product.sno, "Tea")}>

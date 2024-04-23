@@ -66,7 +66,7 @@ function App() {
         Route path = "/contactus"
         element = { < ContactUs / > }
         /> <
-        Route path = "/orderpage"
+        Route path = "/orderpage/"
         element = { < OrderPage / > }
         /> 
         /> <

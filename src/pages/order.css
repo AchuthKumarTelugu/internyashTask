@@ -9,7 +9,11 @@
     border-radius: 12px;
 border: 1px solid rgba(0, 74, 173, 0.40);
 background: #FFF;
-padding: 0.4rem;
+padding:1.5rem;
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 width: 30vw;
 }
 .order-image img{
