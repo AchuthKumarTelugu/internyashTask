@@ -26,11 +26,11 @@ const Carousel = () => {
         className="carousel-image"
         style={{ width: '100%', height: '15%', objectFit: 'cover', alignSelf: 'center' }}
       />
-      <div className="carousel-text">
+      {/* <div className="carousel-text">
         <p>Productivity encounters food revolution </p>
         <p>Authenticity bridges universal Flavors </p>
         <p>No compromise, only excellence </p>
-      </div>
+      </div> */}
     </div>
   );
 };
