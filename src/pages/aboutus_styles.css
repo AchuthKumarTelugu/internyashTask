@@ -86,7 +86,7 @@ main {
     left: 0;
     background-color: var(--color-royalblue-100);
     width: 100%;
-    width:100vw;
+    width: 100vw;
     height: 3.75rem;
     overflow: hidden;
     color: var(--color-white);
@@ -142,6 +142,7 @@ main {
     align-items: flex-start;
     gap: 12px;
     justify-content: space-around;
+    width:23rem;
 }
 
 .foundation-title {
@@ -165,7 +166,9 @@ main {
 .aboutus-des {
     display: flex;
     margin-bottom: 40px;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    justify-content: flex-start;
+    gap:10rem;
 }
 
 .imagea-3 {
@@ -365,13 +368,15 @@ main {
     font-family: Lato;
     font-size: 20px;
     font-style: normal;
-    margin-top:2rem;
+    margin-top: 2rem;
     font-weight: 500;
     line-height: normal;
 }
-.founder-1:last-child{
+
+.founder-1:last-child {
     background-color: rgb(233 255 242);
 }
+
 .image-1-founder {
     border-radius: 15px;
     background: lightgray 2.911px -103.79px / 100% 214.857% no-repeat;
@@ -503,90 +508,122 @@ main {
     position: absolute;
     top: 198px;
     left: 899px;
-    font-weight: 600; 
+    font-weight: 600;
 }
-.journey-des{
-    font-size:1.25rem;
+
+.journey-des {
+    font-size: 1.25rem;
 }
+
 @media screen and (max-width:770px) {
-    .aboutus-des{
+    .aboutus-des {
         display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: center; */
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
     }
-    .foundation-1{
+
+    .foundation-1 {
         width: 71vw;
         gap: 1rem;
         /* text-align: center; */
         align-items: center;
     }
-    .foundation-title{
+
+    .foundation-title {
         margin-left: 3rem;
         margin-top: 3rem;
     }
-    .foundation-desc{
+
+    .foundation-desc {
         margin-bottom: 2rem;
     }
-    .journey-des{
-        font-size:1rem;
+
+    .journey-des {
+        font-size: 1rem;
 
     }
-   .mission-vision{
-    display:flex;
-    flex-direction:column;
-    align-items: center;
-    justify-content: center;
-   }
-   .mission,.vision{
-    width:80%;
-   }
-   .mission-vision .vision{
-    margin-left:7rem;
-   }
-   .core-1{
-    flex-wrap:wrap;
-    /* flex-direction: column; */
-    align-items: center;
-   }
-   .core-1-a{
-    padding:1rem 2rem;
-    width:26vw;
-   }
-   .core-2{
-    margin-right:2rem;
-    margin-left: 20vw;
-   }
-   .core-2-a{
-    padding:1rem 2rem;
-    width:26vw;
-   }
-   .founder-1{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    background-color: white;
-   }
-   
-   .founder-1:last-child {
-    background-color: white;
-}
-    .image-1-founder{
-        margin-top:4rem;
-        margin-bottom:4rem;
+
+    .mission-vision {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
+
+    .mission,
+    .vision {
+        width: 80%;
+    }
+
+    .mission-vision .vision {
+        margin-left: 7rem;
+    }
+
+    .core-1 {
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        align-items: center;
+    }
+
+    .core-1-a {
+        padding: 1rem 2rem;
+        width: 26vw;
+    }
+
+    .core-2 {
+        margin-right: 2rem;
+        margin-left: 20vw;
+    }
+
+    .core-2-a {
+        padding: 1rem 2rem;
+        width: 26vw;
+    }
+
+    .founder-1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        background-color: white;
+    }
+
+    .founder-1:last-child {
+        background-color: white;
+    }
+
+    .image-1-founder {
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+    }
+
     .founder-1-des {
         width: 86%;
     }
-    .founder-1-about{
-        font-size:1rem;
+
+    .founder-1-about {
+        font-size: 1rem;
     }
-    .found-f{
+
+    .found-f {
         flex-direction: column-reverse;
     }
-    .imagea-1 img,.imagea-2 img,.imagea-3 img{
+
+    .imagea-1 img,
+    .imagea-2 img,
+    .imagea-3 img {
         width: 77vw;
         height: 13rem;
     }
+    .team-frame-1 {
+        flex-wrap:wrap;
+        justify-content: center;
     }
+    .mission-header{
+        font-size:1.5rem;
+    }
+    .mission-des{
+        font-size:1rem;
+    }
+}
