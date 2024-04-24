@@ -77,7 +77,7 @@ function Aboutus() {
         {
           color: 'rgb(0 0 0 / 79%)',
           fontFamily: 'Lato',
-          fontSize: '1.25rem',
+          // fontSize: '1.25rem',
           fontStyle: 'normal',
           fontWeight: 500,
           lineHeight: 'normal',
