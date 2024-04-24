@@ -74,7 +74,7 @@ function Home() {
           <div className="ready-to-mix">Ready to Mix Millet Dosa Powder</div>
         </div>
       </div>
-      <div className="best-sellers">Certifications</div>
+      <div className="best-sellers" style={{fontSize:"1.5rem",textAlign:"center",marginBottom:"1rem"}}>Certifications</div>
       <div className="component-45">
         <img className="image-71-icon" alt="" src="/image-71@2x.png" />
         <img className="image-80-icon" alt="" src="/image-71@2x.png" />

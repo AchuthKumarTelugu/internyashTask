@@ -150,6 +150,7 @@ main {
 .best-sellers {
     position: relative;
     font-weight: 600;
+    
 }
 
 .stand-up-pouch-bag-mockup-2 {
@@ -391,10 +392,11 @@ main {
 }
 
 .component-45 {
-    width: max-content;
+    /* width: max-content; */
     position: relative;
     /* overflow: hidden; */
     flex-shrink: 0;
+    margin-bottom: 7rem;
     animation: scroll 10s linear infinite;
 }
 

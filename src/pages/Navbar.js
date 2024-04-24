@@ -34,7 +34,7 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <div clasNames="navbar-item">
+          <div className="navbar-item">
             <img className="" src="/navimage.png" />
            
             <div className="collapse" id="navbarToggleExternalContent2">
