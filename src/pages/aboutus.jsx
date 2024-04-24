@@ -62,7 +62,7 @@ function Aboutus() {
         {
           color: '#000',
           fontFamily: 'Montserrat',
-          fontSize: '20px',
+          fontSize: '1.5rem',
           fontStyle: 'normal',
           fontWeight: '600',
           display: 'flex',
@@ -77,7 +77,7 @@ function Aboutus() {
         {
           color: 'rgb(0 0 0 / 79%)',
           fontFamily: 'Lato',
-          fontSize: '20px',
+          fontSize: '1.25rem',
           fontStyle: 'normal',
           fontWeight: 500,
           lineHeight: 'normal',
@@ -171,7 +171,7 @@ function Aboutus() {
             </div>
           </div>
         </div>
-        <div className='founder-1'>
+        <div className='founder-1 found-f'>
           <div className='founder-1-des'>
             <div className='founder-1-title'>
               <div className='founder-1-name'>Dr. Yalaka Nandini</div>

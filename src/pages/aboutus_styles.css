@@ -531,35 +531,51 @@ main {
     align-items: center;
     justify-content: center;
    }
+   .mission,.vision{
+    width:80%;
+   }
    .mission-vision .vision{
     margin-left:7rem;
    }
    .core-1{
-    flex-wrap:nowrap;
-    flex-direction: column;
+    flex-wrap:wrap;
+    /* flex-direction: column; */
     align-items: center;
    }
    .core-1-a{
     padding:1rem 2rem;
-    
+    width:26vw;
    }
    .core-2{
     margin-right:2rem;
+    margin-left: 20vw;
    }
    .core-2-a{
     padding:1rem 2rem;
+    width:26vw;
    }
    .founder-1{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    background-color: white;
    }
-   .founder-1-des{
-    width: 71%;
-   }
+   
+   .founder-1:last-child {
+    background-color: white;
+}
     .image-1-founder{
         margin-top:4rem;
         margin-bottom:4rem;
+    }
+    .founder-1-des {
+        width: 86%;
+    }
+    .founder-1-about{
+        font-size:1rem;
+    }
+    .found-f{
+        flex-direction: column-reverse;
     }
     }
