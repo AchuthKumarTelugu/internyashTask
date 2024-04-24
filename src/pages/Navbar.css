@@ -48,7 +48,7 @@
 .social-media-icons{
     display:flex;
     gap:1rem;
-    
+    margin-left:60%;
 }
 
 .social-icon{
@@ -60,7 +60,7 @@
         width:20rem;
     }
     .social-media-icons{
-    
+    margin-left: 0%;
     }
 }
 

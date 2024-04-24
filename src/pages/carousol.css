@@ -26,6 +26,9 @@
     /* Semi-transparent background */
     padding: 10px;
 }
+.carousel-text p{
+    font-size:2.5rem;
+}
 @media screen and (max-width:770px) {
     .carousel-container{
         position:relative;

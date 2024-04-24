@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './carousol.css'; 
+import './carousol.css';
 const Carousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
@@ -24,14 +24,16 @@ const Carousel = () => {
         src={images[currentImageIndex]}
         alt={`Image ${currentImageIndex + 1}`}
         className="carousel-image"
-        style={{ width: '100%', height: '15%',objectFit: 'cover', alignSelf: 'center'  }}
+        style={{ width: '100%', height: '15%', objectFit: 'cover', alignSelf: 'center' }}
       />
       <div className="carousel-text">
-    <p>Just Mix And Cook</p>
-  </div>
+        <p>Productivity encounters food revolution </p>
+        <p>Authenticity bridges universal Flavors </p>
+        <p>No compromise, only excellence </p>
+      </div>
     </div>
   );
 };
 
 export default Carousel;
-  
+
