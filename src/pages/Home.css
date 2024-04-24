@@ -74,7 +74,7 @@ main {
 }
 
 .cwipara p {
-    font-size: 25px;
+    font-size: 1rem;
     color: var(--color-gray-200);
     font-weight: 500;
 }
@@ -96,7 +96,7 @@ main {
 }
 
 .imgtext-col h1 {
-    font-size: 25px;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -931,6 +931,13 @@ main {
         justify-content: center;
         margin-top: 2rem;
         margin-bottom: 2rem;
+}
+.cwihead h3{
+    font-size:1.25rem;
+    margin-left:5rem
+}
+.content p.concept{
+    font-size:1rem;
 }
 @media screen and (max-width:600px) {
     .cwi {

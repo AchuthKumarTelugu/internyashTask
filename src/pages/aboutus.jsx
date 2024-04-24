@@ -211,7 +211,7 @@ function Aboutus() {
                 <img src={path} alt={`Team member ${index + 5}`} />
               </div>
               <div className='des'>
-                <div className='des-des'>{descriptions2[index]}</div>
+                <div className='des-des'>{descriptions2[index]}</div> 
               </div>
             </div>
           ))}

@@ -512,9 +512,11 @@ main {
 }
 
 .journey-des {
-    font-size: 1.25rem;
+    font-size: 1rem;
 }
-
+.founder-1-about{
+    font-size: 1rem;
+}
 @media screen and (max-width:770px) {
     .aboutus-des {
         display: flex;
