@@ -70,3 +70,9 @@
     line-height: normal;
     margin-left: 430px;
 }
+@media screen and (max-width:770px) {
+    .contact-form{
+        /* width:100%; */
+        width:65vw;
+    }
+}
