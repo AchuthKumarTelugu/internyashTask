@@ -49,7 +49,8 @@ function Home() {
       <div className="container container-1">
         <h1>Who We Are</h1>
         <div className="content">
-          <img src="/frame-273@2x.png" alt="Company Photo" className="photo" />
+          <img src="/who-we-are.jpg" alt="Company Photo" className="photo" />
+          {/* <img src="/frame-273@2x.png" alt="Company Photo" className="photo" /> */}
           <p className="concept">Welcome to Nutryfood, where culinary innovation meets tradition. With our supreme Research and Development, we've revolutionized cooking, turning hours of effort into minutes of convenience. Effortless Cooking is our mantra, where quality and convenience unite in every dish. We redefine taste through Research Excellence, blending innovative techniques with traditional Indian flavors. Our mission is to share authentic Indian cuisine globally, without compromising on Nutrition, Quality, or Taste. At Nutryfood, excellence is accessible to all, with cost-effective solutions for every kitchen. Join us on a journey where culinary creativity meets innovation, promising unforgettable dining experiences for all.</p>
         </div>
       </div>

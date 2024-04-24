@@ -47,7 +47,8 @@ function Aboutus() {
           </div>
           <div className='foundation' style={{ marginRight: '4rem' }} >
             <div className='imagea-3'>
-              <img src='./imageaboutus3.png'></img>
+              {/* <img src='./imageaboutus3.png'></img> */}
+              <img src='./fruit-full-selection.png' style={{width:"22rem",height:"17rem",borderRadius:"0.5rem"}}></img>
             </div>
             <div className='foundation-1'>
               <div className='foundation-title'>Fruitful Results</div>

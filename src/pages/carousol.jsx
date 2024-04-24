@@ -1,11 +1,18 @@
 import React, { useState, useEffect } from 'react';
 import './carousol.css';
+
 const Carousel = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const images = [
     '/one.png',
     '/w1.jpeg',
     '/w2.jpeg',
+  ];
+
+  const slogans = [
+    "Productivity encounters food revolution",
+    "Authenticity bridges universal Flavors",
+    "No compromise, only excellence",
   ];
 
   useEffect(() => {
@@ -26,14 +33,11 @@ const Carousel = () => {
         className="carousel-image"
         style={{ width: '100%', height: '15%', objectFit: 'cover', alignSelf: 'center' }}
       />
-      {/* <div className="carousel-text">
-        <p>Productivity encounters food revolution </p>
-        <p>Authenticity bridges universal Flavors </p>
-        <p>No compromise, only excellence </p>
-      </div> */}
+      <div className="carousel-text">
+        <p>{slogans[currentImageIndex]}</p>
+      </div>
     </div>
   );
 };
 
 export default Carousel;
-
