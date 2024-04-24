@@ -2,9 +2,23 @@ import React from "react";
 import './Navbar.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import { FaPhoneFlip } from "react-icons/fa6";
+import { MdOutlineMailOutline } from "react-icons/md";
+import { ImWhatsapp } from "react-icons/im";
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
+  const handleEmailClick = () => {
+    window.location.href = 'mailto:contact@Nutryfood.com';
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:+91 93925 87332';
+  };
+
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.link/79b6tq', '_blank');
+  };
   return (
     <>
       <div className="navbar">
@@ -36,7 +50,7 @@ const Navbar = () => {
           </div>
           <div className="navbar-item">
             <img className="" src="/navimage.png" />
-           
+
             <div className="collapse" id="navbarToggleExternalContent2">
               <div className="bg-light shadow-3 p-4">
                 <button data-mdb-button-init data-mdb-ripple-init className="btn btn-link btn-block border-bottom m-0">Link 1</button>
@@ -56,7 +70,7 @@ const Navbar = () => {
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
-          <div className="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+          <div className="collapse navbar-collapse justify-content-center navbar-slider" id="navbarSupportedContent">
             <ul className="navbar-nav me-2 mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link className="text-white nav-link" to="/">Home</Link>
@@ -72,6 +86,11 @@ const Navbar = () => {
                 <Link className="text-white nav-link" to="/contactus">Contact us</Link>
               </li>
             </ul>
+            <div className="social-media-icons">
+            <FaPhoneFlip className="social-icon"  onClick={handlePhoneClick}/>
+            <MdOutlineMailOutline  className="social-icon" onClick={handleEmailClick}/>
+            <ImWhatsapp  className="social-icon" onClick={handleWhatsAppClick}/>
+            </div>
           </div>
         </div>
       </nav>
