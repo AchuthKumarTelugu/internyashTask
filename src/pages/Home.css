@@ -1063,7 +1063,7 @@ main {
     }
     .container-2{
         height:100% ;
-        flex-wrap:nowrap ;
+        flex-wrap:wrap ;
         gap:2rem;
         padding-top:2rem;
         padding-bottom:2rem;

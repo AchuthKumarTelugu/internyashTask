@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 
 import { productData } from '../data/productData';
 import { useNavigate } from 'react-router-dom';
+import WhatsAppButton from './WhatsAppButton';
 let breakfastMixesData=[
     {
       "sno": "1",
@@ -690,6 +691,7 @@ function Products() {
                             </div>
                         )
                     })}
+                    
     </div>
     {/* {
       products.length > 0 ? <div className='product-display'>
@@ -908,6 +910,7 @@ function Products() {
         /div> < /
         div >  */}
         <Footer/>
+        <WhatsAppButton/>
         </>
     );
 }

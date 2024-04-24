@@ -3,6 +3,7 @@ import './Home.css';
 import Footer from './Footer';
 import Headder from "./Navbar";
 import Carousel from "./carousol";
+import WhatsAppButton from './WhatsAppButton';
 
 function Home() {
   return (
@@ -97,6 +98,7 @@ function Home() {
       <div className="footer-c">
         <Footer />
       </div>
+      <WhatsAppButton/>
     </>
   );
 }

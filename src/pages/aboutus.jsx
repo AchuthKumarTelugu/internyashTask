@@ -5,6 +5,7 @@ import { ExternalLink } from 'react-external-link';
 
 import Footer from './Footer';
 import Headder from "./Navbar";
+import WhatsAppButton from './WhatsAppButton';
 function Aboutus() {
   const imagePaths1 = ['./abou2.png', './about3.png', './about4.png', './about5.png'];
   const descriptions1 = ['Business development', 'R&D', 'Inhouse Product Evaluation Team', 'QC & QA'];
@@ -218,6 +219,7 @@ function Aboutus() {
       </div>
       <
         Footer />
+        <WhatsAppButton/>
     </>
   );
 }

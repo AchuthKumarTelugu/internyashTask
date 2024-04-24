@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import './order.css'
 import { useLocation } from 'react-router-dom'
+import WhatsAppButton from './WhatsAppButton'
 let breakfastMixesData=[
   {
     "sno": "1",
@@ -408,6 +409,7 @@ function OrderPage() {
       </form>
     </div>
   </div>
+  <WhatsAppButton/>
         </div>
   )
 }

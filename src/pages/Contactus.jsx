@@ -3,6 +3,7 @@ import './contactjsx.css';
 import Footer from './Footer';
 import Headder from "./Navbar";
 import Navbar from './Navbar';
+import WhatsAppButton from './WhatsAppButton';
 
 function contact() {
     return (
@@ -57,6 +58,7 @@ function contact() {
 
                 </div>
             </div>
+            <WhatsAppButton/>
 
         </>
     );
