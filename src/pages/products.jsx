@@ -472,7 +472,7 @@ function Products() {
                             <div key={product.id} className='prod-display-1' style={{ position: 'relative' }}>
                                 <div className='prod-card' >
                                     <div className='discount-tag'>10% Off</div>
-                                    <img src={product.image} width={300} alt={product.productName}></img>
+                                    <img src={product.image} width={250} height={200} alt={product.productName}></img>
                                     <div className='prod-card-title'>{product.productName}</div>
                                     <Link to={{
                                         pathname: `/orderpage`,
@@ -496,7 +496,7 @@ function Products() {
                             <div key={product.id} className='prod-display-1' style={{ position: 'relative' }}>
                                 <div className='prod-card' >
                                     <div className='discount-tag'>10% Off</div>
-                                    <img src={product.image} width={300} alt={product.productName}></img>
+                                    <img src={product.image} width={250} height={200} alt={product.productName}></img>
                                     <div className='prod-card-title'>{product.productName}</div>
                                     <Link to={{
                                         pathname: `/orderpage`,
@@ -520,7 +520,7 @@ function Products() {
                             <div key={product.id} className='prod-display-1' style={{ position: 'relative' }}>
                                 <div className='prod-card' >
                                     <div className='discount-tag'>10% Off</div>
-                                    <img src={product.image} width={300} alt={product.productName}></img>
+                                    <img src={product.image} width={250} height={200} alt={product.productName}></img>
                                     <div className='prod-card-title'>{product.productName}</div>
                                     <Link to={{
                                         pathname: `/orderpage`,
@@ -544,7 +544,7 @@ function Products() {
                             <div key={product.id} className='prod-display-1' style={{ position: 'relative' }}>
                                 <div className='prod-card' >
                                     <div className='discount-tag'>10% Off</div>
-                                    <img src={product.image} width={300} alt={product.productName}></img>
+                                    <img src={product.image} width={250} height={200} alt={product.productName}></img>
                                     <div className='prod-card-title'>{product.productName}</div>
                                     <Link to={{
                                         pathname: `/orderpage`,
@@ -569,9 +569,9 @@ function Products() {
                             <div key={product.id} className='prod-display-1' style={{ position: 'relative' }}>
                                 <div className='prod-card' >
                                     <div className='discount-tag'>10% Off</div>
-                                    <div className='prod-card-image'>
-                                        <img src='./Frame 260 (2).png' alt={product.productName}></img>
-                                    </div>
+                                    {/* <div className='prod-card-image'> */}
+                                    <img src={product.image} width={250} height={200} alt={product.productName}></img>
+                                    {/* </div> */}
                                     <div className='prod-card-title'>{product.productName}</div>
                                     <Link to={{
                                         pathname: `/orderpage`,
@@ -595,9 +595,9 @@ function Products() {
                             <div key={product.id} className='prod-display-1' style={{ position: 'relative' }}>
                                 <div className='prod-card' >
                                     <div className='discount-tag'>10% Off</div>
-                                    <div className='prod-card-image'>
-                                        <img src='./Frame 260 (2).png' alt={product.productName}></img>
-                                    </div>
+                                    {/* <div className='prod-card-image'> */}
+                                    <img src={product.image} width={250} height={200} alt={product.productName}></img>
+                                    {/* </div> */}
                                     <div className='prod-card-title'>{product.productName}</div>
                                     <Link to={{
                                         pathname: `/orderpage`,
@@ -622,9 +622,9 @@ function Products() {
                             <div key={product.id} className='prod-display-1' style={{ position: 'relative' }}>
                                 <div className='prod-card' >
                                     <div className='discount-tag'>10% Off</div>
-                                    <div className='prod-card-image'>
-                                        <img src='./Frame 260 (2).png' alt={product.productName}></img>
-                                    </div>
+                                    {/* <div className='prod-card-image'> */}
+                                    <img src={product.image} width={250} height={200} alt={product.productName}></img>
+                                    {/* </div> */}
                                     <div className='prod-card-title'>{product.productName}</div>
                                     <Link to={{
                                         pathname: `/orderpage`,
@@ -647,9 +647,9 @@ function Products() {
                             <div key={product.id} className='prod-display-1' style={{ position: 'relative' }}>
                                 <div className='prod-card' >
                                     <div className='discount-tag'>10% Off</div>
-                                    <div className='prod-card-image'>
-                                        <img src='./Frame 260 (2).png' alt={product.productName}></img>
-                                    </div>
+                                    {/* <div className='prod-card-image'> */}
+                                    <img src={product.image} width={250} height={200} alt={product.productName}></img>
+                                    {/* </div> */}
                                     <div className='prod-card-title'>{product.productName}</div>
                                     <Link to={{
                                         pathname: `/orderpage`,
@@ -672,9 +672,9 @@ function Products() {
                             <div key={product.id} className='prod-display-1' style={{ position: 'relative' }}>
                                 <div className='prod-card' >
                                     <div className='discount-tag'>10% Off</div>
-                                    <div className='prod-card-image'>
-                                        <img src='./Frame 260 (2).png' alt={product.productName}></img>
-                                    </div>
+                                    {/* <div className='prod-card-image'> */}
+                                    <img src={product.image} width={250} height={200} alt={product.productName}></img>
+                                    {/* </div> */}
                                     <div className='prod-card-title'>{product.productName}</div>
                                     <Link to={{
                                         pathname: `/orderpage`,
